@@ -1,0 +1,75 @@
+.footer{
+    width: 100%;
+    background-color: $color6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer__social, .footer__info, .footer__account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__social-link, .footer__info-link, .footer__account-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: poppinsRegular;
+    color: $color1;
+}
+
+.footer__social-title, .footer__info-title, .footer__account-title{
+   padding: 10px 20px;
+   text-transform: uppercase;
+   font-family: poppinsBold;
+}
+
+.footer__form-input{
+    padding: 10px;
+    margin: 20px;
+    border: none;
+}
+
+.footer__form-button{
+    padding: 10px 40px;
+    margin: 30px 20px;
+    border: none;
+    background-color: $color2;
+    color: $color1;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.footer__form-button:hover{
+    background-color: $color4;
+}
+
+@media screen and(max-width: 800px) and (min-width: 600px) {
+    .footer{
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 20px;
+    }
+    .footer__form{
+        margin: auto;
+    }
+}
+
+@media screen and(max-width:599px) {
+    .footer{
+        flex-direction: column;
+    }
+}

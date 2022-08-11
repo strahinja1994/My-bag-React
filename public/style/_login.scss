@@ -1,0 +1,87 @@
+body{
+    position: relative;
+}
+
+.login{
+    display: none;
+}
+
+.login-active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color3;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    z-index: 5;
+}
+
+.form{
+    height:50%;
+    width:50%;
+    background: $color2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    z-index: 3;
+    position: relative;
+    padding:20px;
+}
+
+.login__close{
+    border:none;
+    background: transparent;
+    position: absolute;
+    top:0;
+    right:0;
+    padding:10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: $color1;
+}
+
+.login__close:hover{
+    transform: scale(1.2);
+}
+
+.login__username, .login__password{
+    padding: 10px;
+    margin: 20px;
+    font-family: poppinsRegular;
+}
+
+.login__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    button{
+        width: 50%;
+        padding: 10px 40px;
+        margin: 20px;
+        border:none;
+        cursor: pointer;
+        font-family: poppinsRegular;
+    }
+
+    button:hover{
+        background-color: $color6;
+        color: $color1;
+    }
+}
+
+@media screen and(min-width: 600px) and(max-width:900px) {
+    .form{
+        width: 80%;
+    }
+}
+
+@media screen and(max-width:599px) {
+    .form{
+        width: 90%;
+    }
+}

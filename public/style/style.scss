@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'header';
+@import 'banner';
+@import 'slider';
+@import 'main';
+@import 'footer';
+@import 'login';
+@import 'search';
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.blockScroll{
+    overflow:hidden;
+}

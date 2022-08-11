@@ -1,0 +1,35 @@
+.slider{
+    width: 100%;
+    display: flex;
+    background-color: $color4;
+    overflow: hidden;
+}
+
+.slider__description{
+    min-width: 100%;
+}
+
+.slider__description-title{
+    font-size: 100px;
+    text-align: center;
+    padding: 90px 0px;
+    color: $color1;
+    font-family: updockRegular;
+    font-weight: 700;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: $color1;
+}
+
+@media screen and(min-width:1100px) and (max-width: 601px) {
+    .slider__description-title{
+        font-size:70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider__description-title{
+        font-size:40px;
+    }
+}

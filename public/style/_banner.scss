@@ -1,0 +1,105 @@
+.banner{
+    width: 100%;
+    background-color: $color6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__image{
+    margin: 0 50px;
+}
+
+.banner__info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.banner__info-collection{
+    font-size: 30px;
+    padding: 20px;
+    font-family: poppinsBold;
+    letter-spacing: 1px;
+}
+
+.banner__info-title{
+    font-size: 45px;
+    padding: 20px;
+    font-family: poppinsBold;
+    letter-spacing: 2px;
+}
+
+.banner__info-text{
+    font-size: 20px;
+    padding: 20px;
+    font-family: poppinsRegular;
+}
+
+.banner__info-button{
+    width: 40%;
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: $color1;
+    background-color:$color2;
+    border:none;
+    font-family: poppinsRegular;
+}
+
+.banner__info-button:hover{
+    background-color: $color4;
+}
+
+@media screen and(max-width: 1100px) and (min-width: 601px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner__info{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner__image{
+        margin: 0px 10px;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner__info{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__image{
+        margin: 0px 10px;
+        width: calc(100% - 20px);
+    }
+
+    .banner__info-collection{
+        text-align: center;
+    }
+
+    .banner__info-title{
+        text-align: center;
+    }
+
+    .banner__info-text{
+        text-align: center;
+    }
+
+    .banner__info-button{
+        min-width: 50%;
+        
+    }
+}
